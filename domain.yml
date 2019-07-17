@@ -1,0 +1,64 @@
+%YAML 1.1
+---
+actions:
+- utter_goodbye
+- utter_name
+- utter_ask
+- utter_ask_name
+- utter_greet
+- utter_thanks
+- utter_speak_to_human
+- utter_after_email
+- utter_arebot
+- utter_answer_offer
+- action_joke
+entities:
+- technologie
+- email
+- name
+intents:
+- technologies
+- greet
+- offer
+- name
+- arebot
+- email
+- goodbye
+- thanks
+- deny
+- affirm
+
+slots:
+  email:
+    type: text
+  name:
+    initial_value: ET-friend
+    type: text
+
+templates:
+  utter_after_email:
+  - text: Great! Our team already works on their human emails. Meanwile, you may want
+      to explore our blog.
+  utter_answer_offer:
+  - text: What is your requirements? Do you have prefered technologies?
+  utter_arebot:
+  - text: Got it! Please type in your email address so I can forward your request
+      to our business development team and we will be in touch with you shortly.
+  utter_ask:
+  - text: I just wonder why are you here?
+  utter_ask_name:
+  - text: And how can I call you?
+  utter_goodbye:
+  - text: Talk to you later, {name}.
+  - text: Always glad to help you! See you soon.
+  utter_greet:
+  - text: Greetings, human! I’m ETbot, your awesome guide to the world of software
+      development services.
+  utter_name:
+  - text: Nice to meet you, {name}!
+  utter_speak_to_human:
+  - text: Excuse me, i don't have such information, you better speak with human. Please
+      type in your email address so I can forward your request to our business development
+      team and we will be in touch with you shortly.
+  utter_thanks:
+  - text: My pleasure.

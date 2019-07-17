@@ -1,0 +1,4 @@
+action_endpoint:
+  url: "http://localhost:3000/webhook"
+nlg:
+  url: http://localhost:3000/nlg
